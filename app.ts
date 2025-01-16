@@ -32,12 +32,12 @@ app.use(limiter)
 app.use(morgan("dev"));
 
 const allowedOrigins = [
-	'https://blogclientside-s25i.vercel.app',"https://blogclientside-s25i-git-main-arpits-projects-1c6b9bf9.vercel.app","https://blogclientside-s25i-6d3bc9vb1-arpits-projects-1c6b9bf9.vercel.app"
+	'https://blogclientside-s25i.vercel.app',"https://blogclientside-s25i-git-main-arpits-projects-1c6b9bf9.vercel.app","https://blogclientside-s25i-6d3bc9vb1-arpits-projects-1c6b9bf9.vercel.app","https://blogclientside.vercel.app"
 ];
 
 // Configure CORS
 app.use(cors({
-	origin: allowedOrigins,
+	origin: "*",
 	credentials: true,
 	// optionsSuccessStatus: 200 ,// Address potential preflight request issues
 	allowedHeaders: [

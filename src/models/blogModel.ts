@@ -1,6 +1,5 @@
 // blogPost.model.ts
 import mongoose, { Schema, Document, Model } from 'mongoose';
-import { Request, Response } from 'express';
 
 // Comment Interface
 interface IComment {
@@ -114,4 +113,4 @@ const BlogPost: Model<IBlogPost> = mongoose.model<IBlogPost>('BlogPost', blogPos
 // API Endpoints
 
 
-export { BlogPost, IBlogPost, IComment };
+export { BlogPost };

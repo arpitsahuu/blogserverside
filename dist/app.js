@@ -31,12 +31,11 @@ app.use(limiter);
 // logger
 app.use((0, morgan_1.default)("dev"));
 const allowedOrigins = [
-    'https://learnify-weld-three.vercel.app', "https://learnify-c8oz9jn8r-arpits-projects-1c6b9bf9.vercel.app",
-    "http://localhost:3000",
+    'https://blogclientside-s25i.vercel.app', "https://blogclientside-s25i-git-main-arpits-projects-1c6b9bf9.vercel.app", "https://blogclientside-s25i-6d3bc9vb1-arpits-projects-1c6b9bf9.vercel.app"
 ];
 // Configure CORS
 app.use((0, cors_1.default)({
-    origin: "*",
+    origin: allowedOrigins,
     credentials: true,
     // optionsSuccessStatus: 200 ,// Address potential preflight request issues
     allowedHeaders: [
